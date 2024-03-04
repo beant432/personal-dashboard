@@ -26,8 +26,8 @@
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "preBuild": "npm ci",
-    "build": "npm run build"
+    "preBuild": "react-scripts ci",
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
