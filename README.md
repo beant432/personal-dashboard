@@ -1,10 +1,12 @@
 1. To install Node modules: npm install
 2. To start: npm start
-3. DeployedLink:
+3. DeployedLink: https://main.d1v08jaazs290z.amplifyapp.com/#/
 
 // You have to give Location permission in browser to run weather app- as app fetches position
 
 // profile component in UserProfile
+
+- clicking on dashboard will render User profile component
 
 - context api is used
 
