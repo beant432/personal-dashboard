@@ -1,0 +1,74 @@
+.weather-wrapper {
+  justify-content: center;
+  margin: 50px;
+  overflow: scroll;
+  .weather_header {
+    font-weight: 500;
+    margin: 10px 0px 30px;
+    text-align: center;
+    font-size: 30px;
+  }
+  .weather-card {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    overflow: scroll;
+    .weather-body {
+      text-align: center;
+      text-transform: capitalize;
+      .cityName {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0px 0px 14px 0px;
+      }
+      .temp {
+        font-size: 36px;
+        font-weight: bold;
+        margin: 0px;
+      }
+      .weatherDes {
+        font-weight: bold;
+      }
+      .flexContainer {
+        display: flex;
+        justify-content: center;
+        p {
+          padding: 0px 5px;
+        }
+      }
+      .WeatherCardWrapper {
+        display: flex;
+        overflow-x: scroll;
+        .weatherDetailsCard {
+          background-color: rgb(223 223 223);
+          margin: 10px;
+          padding: 10px;
+          border-radius: 4px;
+          min-width: 200px;
+          .flexContainer {
+            display: flex;
+            justify-content: center;
+            p {
+              padding: 0px 5px;
+            }
+          }
+        }
+      }
+      p.error {
+        color: red;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 520px) {
+  .weather-wrapper {
+    margin: 50px 10px;
+    .weather-card {
+      padding: 1rem;
+      .weather-body .WeatherCardWrapper {
+        flex-direction: column;
+      }
+    }
+  }
+}

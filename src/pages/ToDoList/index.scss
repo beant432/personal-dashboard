@@ -1,0 +1,167 @@
+.todo-wrapper {
+  .todoHeader {
+    font-size: 30px;
+    text-align: center;
+  }
+  .toDo-card {
+    .todoform {
+      display: flex;
+      flex-direction: row;
+      margin: 50px;
+      background-color: white;
+      padding: 3rem;
+      border-radius: 10px;
+      border: 1px solid white;
+      .toDoInput {
+        padding: 12px;
+        border: 1px solid #c3c3c3;
+        margin-right: 4px;
+        width: 30%;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      .addBtn {
+        background-color: rgb(78, 161, 78);
+        color: white;
+        padding: 12px;
+        width: 112px;
+        border: 1px solid rgb(78, 161, 78);
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+    .todolist-wrapper {
+      display: flex;
+      flex-direction: row;
+      margin: 50px;
+
+      .toDoList-card {
+        background-color: white;
+        width: 100%;
+        padding: 3rem;
+        border-radius: 10px;
+        border: 1px solid white;
+        overflow: scroll;
+        .todoheader {
+          display: flex;
+          padding: 5px;
+          justify-content: space-between;
+          .todoheaderElement {
+            padding: 5px;
+          }
+        }
+        .toDoInput {
+          padding: 12px;
+          border: 1px solid #c3c3c3;
+          margin-right: 4px;
+        }
+
+        .editBtn {
+          background-color: rgb(3, 153, 207);
+          color: white;
+          padding: 12px;
+          width: 112px;
+          border: 1px solid rgb(3, 153, 207);
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        .addBtn {
+          background-color: rgb(78, 161, 78);
+          color: white;
+          padding: 12px;
+          width: 112px;
+          border: 1px solid rgb(78, 161, 78);
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        .clearBtn {
+          background-color: rgb(255, 0, 0);
+          color: white;
+          padding: 12px;
+          width: 112px;
+          border: 1px solid rgb(255, 0, 0);
+          border-radius: 4px;
+          margin: 6px;
+          width: 250px;
+          cursor: pointer;
+          &.clearCompleted {
+            background-color: rgb(235, 50, 50);
+          }
+        }
+      }
+    }
+    .todoelement-Wrapper {
+      display: flex;
+      border: 1px solid #c3c3c3;
+      padding: 20px;
+      margin: 16px 0px;
+      border-radius: 4px;
+      justify-content: space-between;
+      background-color: #c3c3c3;
+      overflow-x: scroll;
+      .toDoTaskName {
+        padding: 12px;
+        word-wrap: break-word;
+      }
+      .todoCompletedCheckbox {
+        padding: 12px;
+        input[type="checkbox"] {
+          /* Double-sized Checkboxes */
+          -ms-transform: scale(2); /* IE */
+          -moz-transform: scale(2); /* FF */
+          -webkit-transform: scale(2); /* Safari and Chrome */
+          -o-transform: scale(2); /* Opera */
+          transform: scale(2);
+          padding: 10px;
+        }
+      }
+      .editBtn {
+        background-color: rgb(3, 153, 207);
+        color: white;
+        padding: 12px;
+        width: 112px;
+        border: 1px solid rgb(3, 153, 207);
+        border-radius: 4px;
+      }
+      .deleteIcon {
+        color: rgb(255, 0, 0);
+        padding: 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .todo-wrapper .toDo-card {
+    .todoform {
+      margin: 10px;
+      padding: 2rem 1rem;
+      flex-direction: column;
+      flex: 1;
+      .toDoInput {
+        width: 90%;
+        margin-bottom: 10px;
+      }
+    }
+    .todolist-wrapper {
+      margin: 10px;
+
+      .toDoList-card {
+        padding: 2rem 1rem;
+        .todoelement-Wrapper {
+          display: flex;
+          flex-direction: column;
+          .toDoTaskName {
+            word-break: break-all;
+          }
+          .todoCompletedCheckbox {
+            padding: 0px;
+          }
+        }
+        .clearBtn {
+          width: 200px;
+        }
+      }
+    }
+  }
+}

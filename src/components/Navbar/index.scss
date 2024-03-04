@@ -1,0 +1,45 @@
+.navBar {
+  background-color: rgba(7, 121, 244, 0.4);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  .leftMenu .logo a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    &:hover {
+      color: rgb(9, 116, 246);
+    }
+    &:active {
+      color: rgb(9, 116, 246);
+    }
+    &:focus {
+      color: rgb(9, 116, 246);
+    }
+  }
+  .rightMenu ul {
+    display: flex;
+    margin: 0%;
+    list-style: none;
+
+    li {
+      padding: 0px 5px;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+
+        &:hover {
+          color: rgb(9, 116, 246);
+        }
+        &:active {
+          color: rgb(9, 116, 246);
+        }
+        &:focus {
+          color: rgb(9, 116, 246);
+        }
+      }
+    }
+  }
+}
