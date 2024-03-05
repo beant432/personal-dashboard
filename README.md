@@ -1,6 +1,6 @@
 1. To install Node modules: npm install
 2. To start: npm start
-3. DeployedLink: https://main.d1v08jaazs290z.amplifyapp.com/#/
+3. DeployedLink: https://main.d70lmv96yeo14.amplifyapp.com/
 
 // You have to give Location permission in browser to run weather app- as app fetches position
 
